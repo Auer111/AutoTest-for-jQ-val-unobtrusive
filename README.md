@@ -3,8 +3,13 @@ Run through and test validation on .NET apps that use jquery-validation unobtrus
 
 I am currently using this in a .NET CORE app.
 
-To initialize this in your own project use
 
+To initialize this in your own project use:
+```HTML+Razor
 <environment names="Development,Testing">
-		@Html.PartialAsync("_Test").Result
+@Html.PartialAsync("_Test").Result
 </environment>
+```
+
+the autotest window will appear as a small bar on the left side of your screen.
+To use just hover over it and it will expand.
