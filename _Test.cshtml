@@ -1,0 +1,23 @@
+﻿
+<link rel="stylesheet" href="~/css/test.css" />
+
+<div id="TestPanel">
+    <div id="TestModal" class="modal" tabindex="-1" role="dialog" style="display: none;">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 id="TestModelHeader" class="modal-title mr-3">Auto Test</h5>
+                    <button id="AutoTestRun" type="button" class="btn btn-primary float-right" onclick="test()">Start</button>
+                </div>
+                <div id="TestModelBody" class="modal-body">
+                </div>
+                <div class="modal-footer">
+                    <button id="RenderTestData" type="button" class="btn btn-info" onclick="RenderData()">Edit Data</button>
+                    <button id="EraseData" type="button" class="btn btn-danger" style="display: none;" onclick="erasedata()">Revert to Default</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="~/js/test.js" asp-append-version="true"></script>
